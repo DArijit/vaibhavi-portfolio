@@ -47,9 +47,16 @@
   position: absolute;
   z-index: -1;
   opacity: 0.5;
-  width: 90%;
+  width: 80%;
   object-fit: contain;
-  transform: translate(-2vw);
+  animation: spin 60s ease-in-out infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .navBarContainer {
